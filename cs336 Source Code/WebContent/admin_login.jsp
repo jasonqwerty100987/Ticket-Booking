@@ -1,0 +1,33 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<%@ page import="java.io.*,java.util.*,java.sql.*"%>
+<%@ page import="javax.servlet.http.*,javax.servlet.*" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+		<title>Welcome Administrator!\n</title>
+	</head>
+<body>
+Welcome Admin! Please enter your credential below to log in<!-- the usual HTML way -->
+						  
+<br>
+<form  action="admin_redirect.jsp" method="post">
+			Login Page
+			<br>
+			Admin Username:<input type="text" size=25 name="admin_id">
+			<br>
+			Admin Password:<input type="text" size=25 name="admin_pwd">
+			<br>
+			<input type="submit" value="Sign In" />
+</form>
+<br>
+<form  action="index.jsp" method="post">
+			
+			<input type="submit" value="Back to main page" />
+</form>
+	
+	
+</body>
+</html>
